@@ -2,7 +2,7 @@ import json
 import requests
 
 # CONFIGURATION - Make sure this is importable
-EXTERNAL_API_URL = "https://cells-interpretation-saved-related.trycloudflare.com"
+EXTERNAL_API_URL = "<API_ENDPOINT>"
 
 def normalize_task(task):
     """
