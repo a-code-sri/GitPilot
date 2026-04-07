@@ -11,3 +11,5 @@ GitPilot is an AI Agent that automates the task of performing GitHub workflows b
                 In case of voice input, WebAPI converts the voice input into text input and finally the frontend sends its request to the Backend.  
 **Trained-LLM API** : The trained LLM model is hosted on a seperate API   
 **Backend**   : The backend makes a POST request to another API that hosts our trained LLM Model. The API responds with the set of actions to be taken and the                      corresponding parameters. The backend then processes these actions and executes GitHub CLI commands on it's own.
+# References  
+The architecture for the LLM Model has been adapted from [Section 2.2 Part-1 of this CVPR Research Paper](Series adaptor logic.pdf)
