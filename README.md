@@ -30,8 +30,8 @@ Porject GitHub Repository Link: https://github.com/a-code-sri/GitPilot
         3. *dpo_training.json* : Original Training data
 **Backend**   : The backend makes a POST request to another API that hosts our trained LLM Model. The API responds with the set of actions to be taken and the corresponding parameters. The backend then processes these actions and executes GitHub CLI commands on it's own.  
        It's strucutre is given by :  
-          */backend*
-             */agent* 
+          */backend*  
+             */agent*   
                   */planner.py* : Responsible for making request to the LLM Model based on user request and returns LLM json
                   repsonse consisting of the set of actions.  
              */github*   
@@ -39,10 +39,10 @@ Porject GitHub Repository Link: https://github.com/a-code-sri/GitPilot
                    */github_cli.py* : Runs the GitHub CLI Command in user system and commits it to the original repository  
 **Files in Project main directory** :  
         *app.py*   : The main file to host the backend Flask App to receive frontend request  
-        *agent_context.json* : A file that helps agent remember context to extract required parameters to perform an action
+        *agent_context.json* : A file that helps agent remember context to extract required parameters to perform an action  
                                 (eg. Agent might need repo_name parameter while performing action delete_repo)
-        *DockerFile*  : It is the Docker image of the project. Used for project deployment  
-        *docker-compose.yml* : It is the environment file containing all dependencies.   
+        *DockerFile*  : It is the Docker image of the project. Used for project deployment    
+        *docker-compose.yml* : It is the environment file containing all dependencies.    
         *Research_paper.pdf* : The source CVPR research paper.
 
 # Requirements
@@ -60,9 +60,9 @@ Note: change model_path="Qwen/Qwen2-7B" is for the first time use and change it 
 First make sure you have downloaded the given zip file. Unzip it and open project root directory.
 **Method-1 Using Docker: (no other dependencies needed other than Docker Desktop)**
 1. Run the following commands from project **root directory**: 
-   *docker pull adisrinitw/gitpilot30-gitpilot:latest*
-   *docker run -it -e EXTERNAL_API_URL=<YOUR_API_URL> -p 5173:5173 -p 5000:5000 adisrinitw/gitpilot30-gitpilot:latest*
-2. Click on the link(http://localhost:5173/) to open project frontend. You can now use the agent after authenticating your GitHub.
+   *docker pull adisrinitw/gitpilot30-gitpilot:latest*  
+   *docker run -it -e EXTERNAL_API_URL=<YOUR_API_URL> -p 5173:5173 -p 5000:5000 adisrinitw/gitpilot30-gitpilot:latest*  
+3. Click on the link(http://localhost:5173/) to open project frontend. You can now use the agent after authenticating your GitHub.
 **Method-2 Manual Method(Requires manual installation of dependencies)**
 1. Ensure all the below dependencies are already installed in your system: 
     a. **NodeJS**
