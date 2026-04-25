@@ -80,4 +80,4 @@ First make sure you have downloaded the given zip file. Unzip it and open projec
    *npm run dev*
 5. Click on the link(http://localhost:5173/) to open project frontend. You can now use the agent after authenticating your GitHub.
 # References  
-The architecture for the LLM Model has been adapted from [Section 2.2 Part-1 of this CVPR Research Paper](https://github.com/a-code-sri/GitPilot/blob/main/Research_paper.pdf)
+The architecture for the LLM Model has been adapted from [Section 2.2 Part-1 of this CVPR Research Paper](https://github.com/a-code-sri/GitPilot/blob/d176841bb874f8c237d25fd850a06f8fe8ff73ab/Research_Paper.pdf)
